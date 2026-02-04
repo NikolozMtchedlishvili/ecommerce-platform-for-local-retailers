@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout | Fruit & Veggie Store</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="checkout-form">
+        <label>Name:</label>
+        <input type="text" name="dropoffName" required>
+      
+        <label>Phone:</label>
+        <input type="tel" name="dropoffPhone" required>
+      
+        <label>Address:</label>
+        <input type="text" id="dropoffAddress" name="dropoffAddress" required>
+        <div id="dropoffMap"></div>
+        
+        <label>Delivery time:</label>
+        <input type="datetime-local" name="scheduledTime" required>
+
+        <!-- Hidden fields for coordinates -->
+        <input type="hidden" name="dropoffLat" id="dropoffLat" />
+        <input type="hidden" name="dropoffLng" id="dropoffLng" />
+      
+        <p id="feeDisplay">Estimated delivery fee: --</p>
+
+        <label>Payment Method:</label>
+        <input type="radio" id="payment-bog" name="payment_method" value="bog" checked>
+        <label for="payment-bog">BOG</label>
+      
+        <input type="radio" id="payment-tbc" name="payment_method" value="tbc">
+        <label for="payment-tbc">TBC</label>
+      
+        <button type="submit">Place Order</button>
+      </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Fruit & Veggie Store</p>
+  </footer>
+
+  <script>
+  const API_BASE_URL = 'http://localhost:3000';  // Backend URL
+
+  let dropoffMarker, dropoffMap;
+
+  function initMap() {
+    const tbilisi = { lat: 41.7151, lng: 44.8271 };
+
+    dropoffMap = new google.maps.Map(document.getElementById("dropoffMap"), {
+      center: tbilisi,
+      zoom: 13,
+    });
+
+    dropoffMarker = new google.maps.Marker({
+      map: dropoffMap,
+      draggable: true,
+      position: tbilisi,
+    });
+
+    dropoffMarker.addListener("dragend", () => {
+      const pos = dropoffMarker.getPosition();
+      document.getElementById("dropoffLat").value = pos.lat();
+      document.getElementById("dropoffLng").value = pos.lng();
+    });
+
+    const dropoffAutocomplete = new google.maps.places.Autocomplete(document.getElementById("dropoffAddress"));
+    dropoffAutocomplete.bindTo("bounds", dropoffMap);
+    dropoffAutocomplete.addListener("place_changed", () => {
+      const place = dropoffAutocomplete.getPlace();
+      if (!place.geometry) return;
+      dropoffMap.setCenter(place.geometry.location);
+      dropoffMarker.setPosition(place.geometry.location);
+      const lat = place.geometry.location.lat();
+      const lng = place.geometry.location.lng();
+      document.getElementById("dropoffLat").value = lat;
+      document.getElementById("dropoffLng").value = lng;
+
+      fetch(`${API_BASE_URL}/api/delivery-fee`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          dropoffAddress: document.getElementById("dropoffAddress").value,
+          dropoffLat: lat,
+          dropoffLng: lng
+        })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.fee !== null) {
+          document.getElementById("feeDisplay").textContent = `Estimated delivery fee: ₾${data.fee}`;
+        } else {
+          document.getElementById("feeDisplay").textContent = `No providers found`;
+        }
+      })
+      .catch(() => {
+        document.getElementById("feeDisplay").textContent = `Failed to fetch delivery fee`;
+      });
+    });
+  }
+
+
+</script>
+
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk25ZbVevEau5Y2a-SywQZyuinfSuWuhc&libraries=places&callback=initMap"
+  async
+  defer
+></script>
+
+<script src="js/main.js"></script>
+</body>
+
+<style>
+  #dropoffMap {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+</style>
+</html>

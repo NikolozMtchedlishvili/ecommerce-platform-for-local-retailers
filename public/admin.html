@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel | Fruit & Veggie Store</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Upload Products Excel File</h2>
+      <button id="downloadExcel">Download Current Product Excel</button>
+      <form id="uploadForm">
+        <input type="file" id="excelFile" accept=".xlsx" required />
+        <button type="submit">Upload</button>
+      </form>
+      <div id="uploadStatus"></div>
+    </section>
+
+    <section>
+      <h2>Orders</h2>
+
+      <label for="filterStatus">Filter by status:</label>
+      <select id="filterStatus">
+        <option value="all">All</option>
+        <option value="paid">Paid</option>
+        <option value="pending">Pending</option>
+        <option value="failed">Failed</option>
+      </select>
+
+      <label for="sortOrder">Sort by date:</label>
+      <select id="sortOrder">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
+
+      <div id="orders"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Fruit & Veggie Store</p>
+  </footer>
+
+  <script src="js/admin.js"></script>
+  <script>
+    document.getElementById('uploadForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const fileInput = document.getElementById('excelFile');
+      const status = document.getElementById('uploadStatus');
+
+      if (!fileInput.files.length) {
+        status.textContent = "Please select an Excel file.";
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append('file', fileInput.files[0]);
+
+      try {
+        const res = await fetch('http://localhost:3000/admin/upload-products', {
+          method: 'POST',
+          credentials: 'include',
+          body: formData
+        });
+
+        const result = await res.json();
+        if (res.ok) {
+          status.textContent = `✅ Uploaded ${result.count} products successfully.`;
+        } else {
+          status.textContent = `❌ Upload failed: ${result.error}`;
+        }
+      } catch (err) {
+        console.error(err);
+        status.textContent = "❌ Server error during upload.";
+      }
+    });
+
+    // ✅ This enables the download
+    document.getElementById('downloadExcel').addEventListener('click', () => {
+      window.location.href = 'http://localhost:3000/admin/download-products';
+    });
+ </script>
+
+</body>
+</html>

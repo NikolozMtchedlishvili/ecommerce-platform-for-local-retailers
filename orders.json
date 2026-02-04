@@ -1,0 +1,871 @@
+[
+  {
+    "external_order_id": "order-1749576059821",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apples"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-06-10T17:21:00.375Z"
+  },
+  {
+    "external_order_id": "order-1749576182804",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apples"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-06-10T17:23:03.064Z"
+  },
+  {
+    "external_order_id": "order-1749576269399",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apples"
+        }
+      ]
+    },
+    "status": "paid",
+    "created_at": "2025-06-10T17:24:29.905Z"
+  },
+  {
+    "external_order_id": "order-1749586811405",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apples"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-06-10T20:20:12.205Z"
+  },
+  {
+    "external_order_id": "order-1749586845381",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apples"
+        }
+      ]
+    },
+    "status": "paid",
+    "created_at": "2025-06-10T20:20:45.512Z"
+  },
+  {
+    "external_order_id": "order-1749587133073",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apples"
+        }
+      ]
+    },
+    "status": "paid",
+    "created_at": "2025-06-10T20:25:33.336Z"
+  },
+  {
+    "external_order_id": "order-1751634275739",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apples"
+        }
+      ]
+    },
+    "status": "paid",
+    "created_at": "2025-07-04T13:04:36.272Z"
+  },
+  {
+    "external_order_id": "order-1751642609899",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-04T15:23:30.755Z"
+  },
+  {
+    "external_order_id": "order-1751642868163",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-04T15:27:48.728Z"
+  },
+  {
+    "external_order_id": "order-1751718804783",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T12:33:25.790Z"
+  },
+  {
+    "external_order_id": "order-1751719022132",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "paid",
+    "created_at": "2025-07-05T12:37:02.485Z"
+  },
+  {
+    "external_order_id": "order-1751719262110",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T12:41:02.413Z"
+  },
+  {
+    "external_order_id": "order-1751719303732",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T12:41:43.877Z"
+  },
+  {
+    "external_order_id": "order-1751719532886",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T12:45:33.530Z"
+  },
+  {
+    "external_order_id": "order-1751719562320",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T12:46:02.518Z"
+  },
+  {
+    "external_order_id": "order-1751720537279",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T13:02:17.726Z"
+  },
+  {
+    "external_order_id": "order-1751723501930",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T13:51:43.878Z"
+  },
+  {
+    "external_order_id": "order-1751723545110",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T13:52:26.959Z"
+  },
+  {
+    "external_order_id": "order-1751723576449",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T13:52:57.814Z"
+  },
+  {
+    "external_order_id": "order-1751723594931",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T13:53:16.654Z"
+  },
+  {
+    "external_order_id": "order-1751724698461",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T14:11:44.574Z"
+  },
+  {
+    "external_order_id": "order-1751724762136",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.02,
+      "basket": [
+        {
+          "quantity": 2,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T14:12:42.732Z"
+  },
+  {
+    "external_order_id": "order-1751725747283",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T14:29:07.759Z"
+  },
+  {
+    "external_order_id": "order-1751725802599",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T14:30:02.825Z"
+  },
+  {
+    "external_order_id": "order-1751725834760",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T14:30:35.082Z"
+  },
+  {
+    "external_order_id": "order-1751725901371",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-05T14:31:41.841Z"
+  },
+  {
+    "external_order_id": "order-1751807550762",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:12:31.369Z"
+  },
+  {
+    "external_order_id": "order-1751807587576",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:13:07.958Z"
+  },
+  {
+    "external_order_id": "order-1751807631455",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:13:51.750Z"
+  },
+  {
+    "external_order_id": "order-1751807735607",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:15:37.213Z"
+  },
+  {
+    "external_order_id": "order-1751807764940",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:16:07.289Z"
+  },
+  {
+    "external_order_id": "order-1751807994610",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:19:55.130Z"
+  },
+  {
+    "external_order_id": "order-1751808059905",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:21:00.447Z"
+  },
+  {
+    "external_order_id": "order-1751808150776",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:22:31.238Z"
+  },
+  {
+    "external_order_id": "order-1751808509862",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:28:30.344Z"
+  },
+  {
+    "external_order_id": "order-1751808544143",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:29:04.268Z"
+  },
+  {
+    "external_order_id": "order-1751808678164",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:31:18.490Z"
+  },
+  {
+    "external_order_id": "order-1751808709349",
+    "customer_info": {
+      "name": "Nikusha Mchedlishvili",
+      "phone": "598433775",
+      "address": "Chavchavadze Ave, 41, 12"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-07-06T13:31:49.516Z"
+  },
+  {
+    "external_order_id": "order-1755100138448",
+    "customer_info": {
+      "name": "Nikoloz M",
+      "phone": "598433775",
+      "address": "51 Titsian Tabidze Street, Tbilisi, Georgia"
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.02,
+      "basket": [
+        {
+          "quantity": 2,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "pending",
+    "created_at": "2025-08-13T15:48:58.763Z"
+  },
+  {
+    "external_order_id": "order-1755101018337",
+    "customer_info": {
+      "name": "Nikoloz M",
+      "phone": "598433775",
+      "address": "51 Titsian Tabidze Street, Tbilisi, Georgia",
+      "lat": 41.7076807,
+      "lng": 44.7539747
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "paid",
+    "created_at": "2025-08-13T16:03:38.692Z",
+    "deliveryOrderId": 38029,
+    "deliveryStatus": "created"
+  },
+  {
+    "external_order_id": "order-1755121876147",
+    "customer_info": {
+      "name": "Nikoloz M",
+      "phone": "599752556",
+      "address": "26 Bakhtrioni Street, Tbilisi, Georgia",
+      "lat": 41.7197744,
+      "lng": 44.76239959999999
+    },
+    "purchase_units": {
+      "currency": "GEL",
+      "total_amount": 0.01,
+      "basket": [
+        {
+          "quantity": 1,
+          "unit_price": 0.01,
+          "product_id": "Apple"
+        }
+      ]
+    },
+    "status": "paid",
+    "created_at": "2025-08-13T21:51:16.568Z",
+    "deliveryOrderId": 38030,
+    "deliveryStatus": "created"
+  }
+]
