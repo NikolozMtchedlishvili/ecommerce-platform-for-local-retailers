@@ -12,7 +12,7 @@ const app = express();
 const allowedOrigin = 'http://localhost:5500';
 
 // QuickShipper API token (replace with your actual token)
-const QUICKSHIPPER_API_TOKEN = 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjAyMzk0QTQxOURFM0Q4RDQxMUFBQ0I4M0Q5NzRFRENEIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE3NTQzMzM5ODQsImV4cCI6MjA2OTY5Mzk4NCwiaXNzIjoiaHR0cHM6Ly90ZXN0LWF1dGgucXVpY2tzaGlwcGVyLmdlLyIsImF1ZCI6IkRlbGl2ZXJ5QXBpIiwiY2xpZW50X2lkIjoiRGVsaXZlcnlBcGlDbGllbnQiLCJzdWIiOiIxODk1IiwiYXV0aF90aW1lIjoxNzU0MzMzOTg0LCJpZHAiOiJsb2NhbCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik93bmVyIiwiVXNlclBlcm1pc3Npb25zIjoiTm9uZSxDb21wYW55RWRpdCxPcmRlcnNDUlVELFVzZXJDUlVELE93bmVyQ1JVRCIsIlVzZXJSb2xlcyI6Ik93bmVyIiwiU2hvcCI6IjEwMzIiLCJTaG9wT2Zmc2V0IjoiNCIsImp0aSI6IjA3MUFBQ0U1RjREQkQyMjk3OUEyQzM4MTE5RDZBMTc5IiwiaWF0IjoxNzU0MzMzOTg0LCJzY29wZSI6WyJEZWxpdmVyeUFwaSJdLCJhbXIiOlsicHdkIl19.E-kcao5X3BxzSoCYILfh9pdWsa2aueDk0l9jvbZk4zl2FgGbcNUC6gNaVHiiSIRezbguwgBAP3ZyTjWmJpznee2vXuZIrR6rspqSx-2k7T-aEFtA3Kn7LKUAYZGw7vjFKfnrBiRxNQaJDymr8tNYoUwJzKfG3LO_LKo_q1jvT1h4qmXd983r7kNTwE_0AVZAoK8qv5E5RomwTvCHU2PtTxLU5Q8zCs5LOFgYFYexEvjueBUDoSypc4_uEMnSWwWe8dwmTL5ZPHcPFIqK0gMB1St95PWq42wWh7tKPflqW9KbMEj_r1Ra7yMpL7AHKP6FSK0-3ePLZ5LuAmeO4tPR4w';
+const QUICKSHIPPER_API_TOKEN = 'AAAA';
 
 // Middleware
 app.use(cors({
@@ -32,8 +32,8 @@ app.use(session({
 }));
 
 // Your existing constants
-const clientId = '68586';
-const clientSecret = 'X7Uo7c8V8fPs';
+const clientId = '00000';
+const clientSecret = '00000';
 const ADMIN_USERNAME = 'admin';
 const ADMIN_PASSWORD = 'admin123';
 
@@ -182,21 +182,21 @@ app.get('/success', async (req, res) => {
       latitude: order.customer_info.lat,
       addressComment: "Web user",
       name: order.customer_info.name,
-      phonePrefix: "+995",
+      phonePrefix: "+000", //country tel code 
       phone: order.customer_info.phone,
-      city: "Tbilisi",
-      country: "GE"
+      city: "City", // city
+      country: "Country" // country
     },
-    pickUpInfo: {
-      address: "8 Mtskheta Street, Tbilisi",
-      longitude: 44.772855614561635,
-      latitude: 41.70637995679531,
+    pickUpInfo: { 
+      address: "8 Mtskheta Street, Tbilisi", // street address of retailer
+      longitude: 00.0000, // longitude for retailer
+      latitude: 00.0000, // latitude for retailer
       addressComment: "Fixed pickup location",
       name: "Store Warehouse",
-      phonePrefix: "+995",
-      phone: "598433775",
-      city: "Tbilisi",
-      country: "GE"
+      phonePrefix: "+000", // country tel code
+      phone: "+000 000 000", //tel of retailer
+      city: "City", // city 
+      country: "Country" // country
     },
     provider: {
       providerId: 2,
@@ -351,12 +351,12 @@ app.post('/api/delivery-fee', async (req, res) => {
   const dropoffStreetName = dropoffAddress.split(',')[0].trim();
 
   const params = new URLSearchParams({
-    FromStreetName: "8 Mtskheta Street",
-    FromCityName: "Tbilisi",
-    FromLatitude: "41.70637995679531",
-    FromLongitude: "44.772855614561635",
+    FromStreetName: "address",
+    FromCityName: "City",
+    FromLatitude: "00.0000",
+    FromLongitude: "00.0000",
     ToStreetName: dropoffStreetName,
-    ToCityName: "Tbilisi",
+    ToCityName: "City",
     ToLatitude: dropoffLat.toString(),
     ToLongitude: dropoffLng.toString()
   });
@@ -404,21 +404,21 @@ app.post('/api/order', async (req, res) => {
       latitude: parseFloat(dropoffLat),
       addressComment: "Web user",
       name: dropoffName,
-      phonePrefix: "+995",
+      phonePrefix: "country tel code",
       phone: dropoffPhone,
-      city: "Tbilisi",
-      country: "GE"
+      city: "City",
+      country: "Country"
     },
     pickUpInfo: {
-      address: "8 Mtskheta Street, Tbilisi",
-      longitude: 44.772855614561635,
-      latitude: 41.70637995679531,
+      address: "Address",
+      longitude: 00.0000,
+      latitude: 00.0000,
       addressComment: "Fixed pickup location",
       name: "Store Warehouse",
-      phonePrefix: "+995",
-      phone: "598433775",
-      city: "Tbilisi",
-      country: "GE"
+      phonePrefix: "country tel code",
+      phone: "phone",
+      city: "City",
+      country: "Country"
     },
     provider: {
       providerId: 2,
