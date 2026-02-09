@@ -64,7 +64,7 @@ The frontend is designed to be built using **HTML, CSS, and JavaScript**, focusi
 
 ---
 
-## Future vision
+## Roadmap & Business Considerations
 The project is currently work in progress. With improvements to be done on the frontend, especially design.
 
 Apart from frontend and backend, I must come up with:
