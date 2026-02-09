@@ -5,6 +5,13 @@ This project was built to address a real-world accessibility problem faced by sm
 
 I developed a **fully functional e-commerce prototype** that enables local stores to sell products online, accept digital payments, and offer delivery services. The platform is designed to be scalable and adaptable for multiple neighborhood retailers with minimal customization. I integrated Bank of Georgia Payments API to handle digital payments and QuickShipper for delivery services.
 
+## Tech Stack
+- Backend: Node.js, Express
+- Frontend: HTML, CSS, JavaScript
+- Payments: Bank of Georgia Payments API (sandbox)
+- Delivery: QuickShipper API (sandbox)
+- Storage: JSON (demo), scalable to DB
+
 ---
 
 ## Problem Statement
